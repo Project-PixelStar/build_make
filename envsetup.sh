@@ -889,6 +889,11 @@ function lunch()
     fixup_common_out_dir
 
     set_stuff_for_environment
+
+    echo "";
+    cat $(gettop)/build/make/pixelstar_ascii_logo;
+    echo"";
+
     [[ -n "${ANDROID_QUIET_BUILD:-}" ]] || printconfig
 
     if [ $used_lunch_menu -eq 1 ]; then
