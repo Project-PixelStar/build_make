@@ -19,8 +19,7 @@
 
 # /system_ext packages
 PRODUCT_PACKAGES += \
-    CarrierConfig \
-    EmergencyInfo \
+    CarrierConfig
 
 PRODUCT_PACKAGES_SHIPPING_API_LEVEL_34 += \
     hwservicemanager \
