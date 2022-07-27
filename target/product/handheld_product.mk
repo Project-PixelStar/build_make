@@ -22,7 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/media_product.mk)
 
 # /product packages
 PRODUCT_PACKAGES += \
-    Browser2 \
     Calendar \
     Contacts \
     DeskClock \
@@ -37,6 +36,11 @@ ifeq ($(PIXELSTAR_BUILD),)
 PRODUCT_PACKAGES += \
     Camera2 \
     LatinIME
+endif
+
+ifeq ($(TARGET_BUILD_VARIANT),eng)
+PRODUCT_PACKAGES += \
+    Browser2
 endif
 
 PRODUCT_PACKAGES_DEBUG += \
