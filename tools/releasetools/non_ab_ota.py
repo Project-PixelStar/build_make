@@ -231,7 +231,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   build_date = target_info.GetBuildProp("org.pixelstar.build_date")
   security_patch = target_info.GetBuildProp("ro.build.version.security_patch")
   device = target_info.GetBuildProp("org.pixelstar.device")
-  script.PrintPixelStarBanner(is_plus, android_version, build_id, build_date,
+  script.PrintPixelStarBanner(android_version, build_id, build_date,
                                   security_patch, device)
 
   device_specific.FullOTA_InstallBegin()

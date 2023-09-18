@@ -264,7 +264,7 @@ class EdifyGenerator(object):
     """Log a message to the screen (if the logs are visible)."""
     self.script.append('ui_print("%s");' % (message,))
 
-  def PrintPixelStarBanner(self, is_plus, android_version, build_id, build_date,
+  def PrintPixelStarBanner(self, android_version, build_id, build_date,
                                   security_patch, device):
     self.Print("                  Welcome to                  ")
     self.Print("                Project PixelStar             ")
